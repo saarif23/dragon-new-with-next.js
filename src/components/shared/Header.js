@@ -1,9 +1,9 @@
 import dragonNewsLogo from '@/assets/dragonNews.png'
-import { getCurrentDateTime } from '@/utils/getCurrentDate';
-import { Box, Container, Typography } from '@mui/material';
+import GetCurrentDateTime from '@/utils/getCurrentDate';
+import { Box, Typography } from '@mui/material';
 import Image from 'next/image';
 const Header = () => {
-    const currentTime = getCurrentDateTime()
+    const currentTime = GetCurrentDateTime()
     return (
         <Box className='w-full my-2  text-center'>
             <Image className=' mx-auto' src={dragonNewsLogo} alt='dragonNewsLogo' width={400} height={400} />

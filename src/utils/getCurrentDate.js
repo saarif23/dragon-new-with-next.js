@@ -1,4 +1,5 @@
-export function getCurrentDateTime() {
+
+const GetCurrentDateTime = () => {
     const currentDate = new Date();
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -11,4 +12,4 @@ export function getCurrentDateTime() {
     return ` ${dayOfWeek}, ${month} ${dayOfMonth}, ${year}`
 }
 
-
+export default GetCurrentDateTime;
