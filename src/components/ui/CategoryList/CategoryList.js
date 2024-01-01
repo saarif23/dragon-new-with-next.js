@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const CategoryList = async () => {
     const { data: allCategory } = await getAllCategoriesNews();
-    console.log(allCategory);
+    // console.log(allCategory);
     return (
 
         <div className="mt-5">
