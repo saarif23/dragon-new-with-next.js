@@ -7,6 +7,9 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import sideBarNews from "@/assets/side-top-news.png";
 import Image from "next/image";
+import SideBarCard from "./SideBarCard";
+import sideBarBottomImage from "@/assets/side-bottom-img.png";
+
 const SideBar = () => {
   return (
     <Box>
@@ -30,7 +33,19 @@ const SideBar = () => {
           </CardContent>
         </Card>
       </Grid>
-      
+      <SideBarCard />
+      <SideBarCard />
+      <SideBarCard />
+      <SideBarCard />
+     
+      <Box>
+        <Image
+          src={sideBarBottomImage}
+          alt="sideBarImage"
+          width={800}
+          height={200}
+        />
+      </Box>
     </Box>
   );
 };

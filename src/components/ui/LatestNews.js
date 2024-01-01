@@ -51,16 +51,23 @@ const LatestNews = async () => {
           </Typography>
         </CardContent>
       </Card>
-      <Grid container>
-        {allNews.slice(0, 6).map((news) => (
-          <Grid key={news} lg={6}>
-            <Card className="m-3">
+      <Grid container lg={12} columnSpacing={2} sx={{
+        marginBottom: "10px"
+      }}>
+        {allNews.slice(0,4).map((news) => (
+          <Grid key={news} item lg={6} >
+            <Card
+              sx={{
+                width: "100%",
+                margin: "10px 0px",
+              }}
+            >
               <CardMedia>
                 <Image
                   src={news.thumbnail_url}
                   alt="topNews"
                   width={400}
-                  height={200}
+                  height={100}
                   style={{
                     width: "100%",
                     height: "200px",
@@ -82,8 +89,8 @@ const LatestNews = async () => {
                   {news.category}
                 </Button>
                 <Typography variant="h6" gutterBottom>
-                {news.title.length > 30
-                    ? news.title.slice(0, 30)+".."
+                  {news.title.length > 30
+                    ? news.title.slice(0, 30) + ".."
                     : news.title}
                 </Typography>
                 <Typography gutterBottom variant="body2" color="">
