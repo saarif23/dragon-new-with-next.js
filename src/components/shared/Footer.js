@@ -35,11 +35,12 @@ const navItems = [
 const Footer = () => {
     return (
 
-        <Box className="w-full text-center  py-10 bg-black"
+        <Box className="w-full text-center bg-black py-10"
             sx={{
                 "& SVG": {
                     color: 'white'
-                }
+                },
+
             }}>
             <IconButton>
                 <FacebookIcon />
@@ -56,7 +57,7 @@ const Footer = () => {
             <Box className="w-full text-center">
                 {navItems.map((item) => (
                     <Link key={item} href={item.pathName}>
-                        <Button className='text-white'>{item.route}</Button>
+                        <Button sx={{color:'white'}}>{item.route}</Button>
                     </Link>
                 ))}
             </Box>
