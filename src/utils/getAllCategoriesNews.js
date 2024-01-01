@@ -1,6 +1,6 @@
 
 const getAllCategoriesNews = async () => {
-    const res = await fetch('http://localhost:5000/categories')
+    const res = await fetch('https://the-dragon-new-server-iota.vercel.app/categories')
     return res.json()
 };
 
