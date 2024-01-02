@@ -1,5 +1,5 @@
 "use client";
-import { Box, Button,  IconButton, Typography } from "@mui/material";
+import { Box, Button, IconButton, Typography } from "@mui/material";
 //icons
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -10,10 +10,6 @@ const navItems = [
   {
     route: "Home",
     pathName: "/",
-  },
-  {
-    route: "Pages",
-    pathName: "/pages",
   },
   {
     route: "Category",

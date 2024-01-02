@@ -20,10 +20,6 @@ const navItems = [
     pathName: "/",
   },
   {
-    route: "Pages",
-    pathName: "/pages",
-  },
-  {
     route: "Category",
     pathName: "/categories/news?category=all-news",
   },
@@ -42,7 +38,6 @@ const navItems = [
 ];
 
 function Navbar() {
-    
   return (
     <>
       <Header />
@@ -62,6 +57,7 @@ function Navbar() {
                   color: "blue",
                   textDecoration: "underline",
                 },
+                display: { xs: "none", sm: "block" },
               }}
             >
               {navItems.map((item) => (
