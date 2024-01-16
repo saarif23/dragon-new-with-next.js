@@ -55,7 +55,7 @@ const LatestNews = async () => {
         marginBottom: "10px"
       }}>
         {allNews.slice(0,4).map((news) => (
-          <Grid key={news} item lg={6} >
+          <Grid key={news} item xs={12} sm={6} >
             <Card
               sx={{
                 width: "100%",
