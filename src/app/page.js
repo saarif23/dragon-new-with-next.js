@@ -9,7 +9,7 @@ const HomePage =  () => {
         <Grid item xs={12} md={8}>
           <LatestNews />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} md={4} >
           <SideBar />
         </Grid>
       </Grid>

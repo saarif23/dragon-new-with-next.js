@@ -38,7 +38,7 @@ const SideBar = () => {
       <SideBarCard />
       <SideBarCard />
      
-      <Box>
+      <Box sx={{marginBottom:"20px"}}>
         <Image
           src={sideBarBottomImage}
           alt="sideBarImage"
