@@ -18,7 +18,7 @@ const page = async () => {
         columns={{ xs: 4, sm: 8, md: 12 }}
       >
         {allNews.map((news) => (
-          <Grid item xs={2} sm={4} md={4} key={news._id}>
+          <Grid item xs={12} md={6}  key={news._id}>
             <Link href={`/${news.category.toLowerCase()}/${news._id}`}>
               <Card className="my-5">
                 <CardMedia
