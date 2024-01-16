@@ -62,7 +62,9 @@ const page = () => {
     },
   ];
   return (
-    <Box>
+    <Box sx={{
+      marginBottom:"20px"
+    }}>
       <Typography
         variant="h4"
         style={{
@@ -131,10 +133,11 @@ const page = () => {
       </Typography>
       <Grid container spacing={2}>
         {teams.map((person) => (
-          <Grid key={person.name} item xs={4}>
+          <Grid key={person.name} item xs={12} sm={6} lg={4}>
             <Card
               sx={{
                 backgroundColor: "#1B4242 ",
+               
               }}
             >
               <CardMedia>
